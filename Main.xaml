@@ -69,7 +69,6 @@
       <AssemblyReference>UiPath.Excel</AssemblyReference>
       <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
       <AssemblyReference>UiPath.OCR.Activities.Design</AssemblyReference>
-      <AssemblyReference>System.Runtime.WindowsRuntime</AssemblyReference>
       <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
       <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
       <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
@@ -179,11 +178,7 @@
               <Parallel.Variables>
                 <Variable x:TypeArguments="x:String" Default="&lt;webctrl id='product{0}' tag='DIV' class='product unlocked enabled'/&gt;" Name="ProductSelector" />
                 <Variable x:TypeArguments="x:Int32" Name="ProductNumber" />
-                <Variable x:TypeArguments="x:String" Name="UpgradeSelector">
-                  <Variable.Default>
-                    <Literal x:TypeArguments="x:String">&lt;webctrl tag='DIV' class='crate upgrade enabled' parentid='upgrades'/&gt;</Literal>
-                  </Variable.Default>
-                </Variable>
+                <Variable x:TypeArguments="x:String" Default="&lt;webctrl tag='DIV' class='crate upgrade enabled' parentid='upgrades'/&gt;" Name="UpgradeSelector" />
                 <Variable x:TypeArguments="x:Boolean" Name="UpgradeAvailable" />
                 <Variable x:TypeArguments="x:Boolean" Name="NotificationExists" />
               </Parallel.Variables>
@@ -411,7 +406,7 @@
                           </OutArgument>
                         </Assign.To>
                         <Assign.Value>
-                          <InArgument x:TypeArguments="x:Int32">1</InArgument>
+                          <InArgument x:TypeArguments="x:Int32">17</InArgument>
                         </Assign.Value>
                       </Assign>
                       <ui:InterruptibleDoWhile DisplayName="Do While" sap:VirtualizedContainerService.HintSize="562,1288" sap2010:WorkflowViewState.IdRef="InterruptibleDoWhile_4">
