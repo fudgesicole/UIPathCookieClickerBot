@@ -181,7 +181,7 @@
                 <Variable x:TypeArguments="x:Int32" Name="ProductNumber" />
                 <Variable x:TypeArguments="x:String" Name="UpgradeSelector">
                   <Variable.Default>
-                    <Literal x:TypeArguments="x:String">&lt;webctrl tag='DIV' class='crate upgrade enabled'/&gt;</Literal>
+                    <Literal x:TypeArguments="x:String">&lt;webctrl tag='DIV' class='crate upgrade enabled' parentid='upgrades'/&gt;</Literal>
                   </Variable.Default>
                 </Variable>
                 <Variable x:TypeArguments="x:Boolean" Name="UpgradeAvailable" />
@@ -395,7 +395,7 @@
                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                       </scg:Dictionary>
                     </sap:WorkflowViewStateService.ViewState>
-                    <ui:RepeatNumberOfTimesX DisplayName="Repeat Number of Times" sap:VirtualizedContainerService.HintSize="638,1232" sap2010:WorkflowViewState.IdRef="RepeatNumberOfTimesX_1" NumberOfTimes="20" StartAt="1">
+                    <ui:RepeatNumberOfTimesX DisplayName="Repeat Number of Times" sap:VirtualizedContainerService.HintSize="638,1232" sap2010:WorkflowViewState.IdRef="RepeatNumberOfTimesX_1" NumberOfTimes="40" StartAt="1">
                       <ui:RepeatNumberOfTimesX.Body>
                         <ActivityAction x:TypeArguments="x:Int32">
                           <ActivityAction.Argument>
@@ -517,7 +517,7 @@
                         </ActivityAction>
                       </ui:RepeatNumberOfTimesX.Body>
                     </ui:RepeatNumberOfTimesX>
-                    <Delay Duration="00:01:15" sap:VirtualizedContainerService.HintSize="638,22" sap2010:WorkflowViewState.IdRef="Delay_1" />
+                    <Delay Duration="00:30:00" sap:VirtualizedContainerService.HintSize="638,22" sap2010:WorkflowViewState.IdRef="Delay_1" />
                   </Sequence>
                 </ui:InterruptibleDoWhile.Body>
                 <ui:InterruptibleDoWhile.Condition>
