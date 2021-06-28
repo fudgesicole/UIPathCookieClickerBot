@@ -226,7 +226,7 @@
                       <mca:CSharpValue x:TypeArguments="x:Boolean" sap2010:WorkflowViewState.IdRef="CSharpValue`1_1">ProductNumber &gt;= 0</mca:CSharpValue>
                     </ui:InterruptibleDoWhile.Condition>
                   </ui:InterruptibleDoWhile>
-                  <Delay Duration="00:00:15" sap:VirtualizedContainerService.HintSize="640,22" sap2010:WorkflowViewState.IdRef="Delay_1" />
+                  <Delay Duration="00:15:00" sap:VirtualizedContainerService.HintSize="640,22" sap2010:WorkflowViewState.IdRef="Delay_1" />
                 </Sequence>
               </ui:InterruptibleDoWhile.Body>
             </ui:InterruptibleDoWhile>
